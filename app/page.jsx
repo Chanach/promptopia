@@ -15,7 +15,7 @@ const Home = () => {
         Promptopia is an open-source AI prompting tool for modern world to
         discover, create and share creative prompts.
         <br />
-        To give you an example: This webstie I've created by myself using
+        To give you an example: This webstie I have created by myself using
         NextJs, React, MongoDB and NodeJs.
       </p>
       <Feed />
