@@ -3,11 +3,7 @@ import React, { Suspense, useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Form from "@components/Form";
 
-const Loading = () => {
-  return <div>Loading...</div>;
-};
-
-const EditPrompt = () => {
+const EditPromptSuspense = () => {
   const router = useRouter();
   const [submitting, setSubmitting] = useState(false);
   const [post, setPost] = useState({
@@ -66,6 +62,14 @@ const EditPrompt = () => {
         submitting={submitting}
         handleSubmit={updatePrompt}
       />
+    </Suspense>
+  );
+};
+
+const EditPrompt = () => {
+  return (
+    <Suspense>
+      <EditPromptSuspense />
     </Suspense>
   );
 };
