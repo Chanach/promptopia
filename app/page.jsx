@@ -7,7 +7,7 @@ const Home = () => {
         Askat Duishenov
         <br className="max-md:hidden" />
         <span className="orange_gradient text-center">
-          Consulting
+          AI-Consulting
           {/* AI-Powered Prompts */}
         </span>
       </h1>
